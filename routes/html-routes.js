@@ -7,6 +7,6 @@ router.get('/', (req, res) => {
 });
 //defines the route that sends 'notes.html' as a response to a client when a GET request is made
 router.get('/notes', (req, res) => {
-    res.sendFile(path.join(_dirname, '../public/notes.html'))
+    res.sendFile(path.join(__dirname, '../public/notes.html'))
 });
 module.exports = router;
